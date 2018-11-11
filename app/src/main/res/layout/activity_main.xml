@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/login_bg"
     tools:context=".MainActivity">
 
 
@@ -15,26 +16,34 @@
         android:layout_centerHorizontal="true"
         android:orientation="vertical">
 
-        <TextView
-            android:text="Login"
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
             android:gravity="center"
-            android:layout_marginTop="50dp"
-            android:textColor="#fff"
-            android:layout_gravity="center_horizontal"
-            android:background="@drawable/logo_bg"
-            android:layout_width="100dp"
-            android:layout_height="100dp" />
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:src="@drawable/logo"
+                android:transitionName="logo" />
+        </LinearLayout>
 
         <TextView
+
             android:text="Email"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="30dp"
             android:textSize="18dp"
+            android:textColor="#ffffff"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
         <EditText
             android:id="@+id/etEmailInput"
             android:layout_marginTop="10dp"
             android:hint="Enter Email"
+            android:textColor="#ffffff"
+            android:textColorHint="#A9A9A9"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
@@ -42,12 +51,19 @@
             android:layout_marginTop="10dp"
             android:textSize="18dp"
             android:text="Password"
+            android:textColor="#ffffff"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
         <EditText
             android:id="@+id/etPassInput"
             android:layout_marginTop="10dp"
             android:hint="Enter Password"
+            android:textColorHint="#A9A9A9"
+            android:imeActionId="@+id/login"
+            android:imeActionLabel="Login"
+            android:imeOptions="actionUnspecified"
+            android:inputType="textPassword|numberPassword"
+            android:textColor="#ffffff"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
         <Button
@@ -63,7 +79,11 @@
             android:layout_height="wrap_content" />
 
         <TextView
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="20dp"
             android:id="@+id/show"
+            android:text="show"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
