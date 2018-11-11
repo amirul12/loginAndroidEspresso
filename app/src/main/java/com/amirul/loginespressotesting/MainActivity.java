@@ -13,6 +13,20 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+
+/*
+ *  ****************************************************************************
+ *  * Created by : Md Amirul  Islam on 11/9/2018 at 8.11 PM.
+ *  * Email : amirul.csejust@gmail.com
+ *  *
+ *  * Purpose: To test all element of UI
+ *  *
+ *  * Last edited by : Md Amirul Islam on 11/11/2018.
+ *  *
+ *  * Last Reviewed by : <Reviewer Name> on <mm/dd/yy>
+ *  ****************************************************************************
+ */
+
 public class MainActivity extends AppCompatActivity {
 
     private EditText mEmailEditText, mPasswordEditText;
